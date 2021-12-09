@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculatrice.css">
+    <script src="calculatrice.js" defer></script>
+    <title>Calculatrice</title>
+</head>
+
+<body>
+    <div id="screen"></div>
+    <div>
+        <button onclick="addOp('+')">+</button>
+        <button onclick="addNumber(7)">7</button>
+        <button onclick="addNumber(8)">8</button>
+        <button onclick="addNumber(9)">9</button>
+    </div>
+    <div>
+        <button onclick="addOp('-')">-</button>
+        <button onclick="addNumber(4)">4</button>
+        <button onclick="addNumber(5)">5</button>
+        <button onclick="addNumber(6)">6</button>
+    </div>
+    <div>
+        <button onclick="addOp('*')">*</button>
+        <button onclick="addNumber(1)">1</button>
+        <button onclick="addNumber(2)">2</button>
+        <button onclick="addNumber(3)">3</button>
+    </div>
+    <div>
+        <button onclick="addOp('/')">/</button>
+        <button class="zero" onclick="addNumber(0)">0</button>
+        <button onclick="compute()">=</button>
+
+    </div>
+    <div>
+
+        <button class="zero" onclick="erase()">AC</button>
+        <button class="zero" onclick="del()">DEL</button>
+
+
+    </div>
+</body>
+
+</html>

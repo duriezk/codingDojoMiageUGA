@@ -1,0 +1,21 @@
+#screen {
+    border: 1px solid black;
+    min-height: 20px;
+    width: 90px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.zero {
+    width: 45px;
+}
+
+button {
+    width: 20px;
+}
+
+div {
+    margin: auto;
+    margin-bottom: 2px;
+    text-align: center;
+}
