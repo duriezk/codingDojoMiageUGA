@@ -1,4 +1,4 @@
-let url = 'https://images-api.nasa.gov/search?'
+let url = 'https://images-api.nasa.gov/search?media_type=image&year_start=2019&year_end=2020&title=earth'
 
 // exemple : 'https://images-api.nasa.gov/search?media_type=image&year_start=2019&year_end=2020&title=earth'
 
@@ -6,7 +6,7 @@ async function recupDonnees(){
 
 let dataJson
 
- await fetch('https://images-api.nasa.gov/search?media_type=image&year_start=2019&year_end=2020&title=earth',{method : 'GET'})
+ await fetch(url,{method : 'GET'})
  .then(responses =>{
      if(responses.ok){
          return responses.json()
